@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyMultiGuard - Email Security Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🛡️ PyMultiGuard</h1>
+            <p class="subtitle">Email Security Intelligence Analyzer</p>
+            <p class="project-info">Information Security Class Project</p>
+        </header>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <button id="analyzeBtn" class="btn btn-primary">
+                <span id="btnText">🔍 Analyze Emails</span>
+                <span id="btnLoader" class="loader" style="display: none;"></span>
+            </button>
+            <div class="info">
+                <span id="statusText">Ready to analyze</span>
+            </div>
+        </div>
+
+        <!-- Results Container -->
+        <div id="resultsContainer" class="results-container">
+            <div class="welcome-message">
+                <h2>Welcome to PyMultiGuard</h2>
+                <p>Click "Analyze Emails" to start scanning your inbox for threats.</p>
+                <div class="features">
+                    <div class="feature">
+                        <span class="icon">🔍</span>
+                        <h3>Sender Intelligence</h3>
+                        <p>Real company lookup and legitimacy verification</p>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">📊</span>
+                        <h3>Data Collection</h3>
+                        <p>Shows what personal data they have about you</p>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">🎯</span>
+                        <h3>Source Tracking</h3>
+                        <p>Reveals how spammers got your email</p>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">🔗</span>
+                        <h3>Link Safety</h3>
+                        <p>Detects phishing and malware threats</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Powered by Groq AI • Information Security Project 2026</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
